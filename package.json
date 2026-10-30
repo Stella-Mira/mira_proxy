@@ -1,0 +1,36 @@
+{
+  "name": "mira_proxy",
+  "version": "0.2.0",
+  "description": "DSH 反向代理插件：在插件内起反向代理，把只监听回环的 DSH Web GUI 变成局域网入口（TLS 可开关、Host/Origin 改写、每请求注入签名会话 cookie、WebSocket 直通、代理自有可撤销/可续期的 HMAC 会话 cookie、端口占用诊断、mira_proxy_status 只读状态）",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "plugin",
+    "reverse-proxy",
+    "tls",
+    "https",
+    "basic-auth",
+    "websocket"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stella-Mira/mira_proxy.git"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

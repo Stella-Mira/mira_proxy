@@ -1,0 +1,7 @@
+node_modules/
+*.log
+.DS_Store
+
+# 运行期产物：默认数据目录在 <.dsh>/plugin-data/mira_proxy，
+# 这里的 data/ 只可能来自 baseDir 配置不当或历史版本，别提交。
+data/
